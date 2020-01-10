@@ -1,0 +1,240 @@
+html,
+body {
+  /*background-image: linear-gradient(to bottom,  #FF8800, #FFCC00);*/
+  width: 100%;
+  /*height: 100%;*/
+  margin: 0;
+  padding: 0;
+  background: #e7e3d4;
+
+    box-sizing: border-box;
+}
+.container {
+  height:100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  color:#2A3166;
+  min-height:100%;
+  
+}
+ul {
+  padding-left: 0;
+  margin:0;
+  /*overflow: auto;*/
+}
+
+li {
+  list-style-type: none;
+  text-decoration: none;
+  margin:0;
+}
+.header{
+  /*border: 1px solid black;*/
+  font-size: 60px;
+  /*margin:10px;*/
+  overflow: hidden;
+
+}
+
+.hide{
+  display:none;
+}
+.column-center{
+  /*border: 1px solid black;*/
+  display: -webkit-box;
+  display: -moz-box;
+  display: -webkit-flex;
+  display:flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-top:30px;
+
+
+}
+.row-center{
+  display:flex;
+  /*flex-direction: column;*/
+  align-items: center;
+  justify-content: center;
+}
+.choice-list{
+  width: 83.33%;
+  max-width: 750px; 
+  min-height:400px;
+  margin-top:20px;
+  display:flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.card{
+  /*border: 1px solid rgba(0,0,0,.29);*/
+  background-color: #b4dfe5;
+  /*margin-top:5px;*/
+  height:180px;
+  width:180px;
+  border-radius: 15px;
+  /*box-shadow: 0 9px #999;  */
+  box-shadow: 0 0 5px 5px #bbb;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  cursor:pointer;
+  font-size:60px;
+  font-weight: 900;
+  /*color:#fff;*/
+
+}
+.card:hover{
+  background-color: #d2fdff;
+}
+/*.card:active {
+  background-color: #d2fdff;
+  box-shadow: 0 5px #666;
+  transform: translateY(4px);
+}*/
+.selected {
+  background-color: #d2fdff;
+  box-shadow: 0 0 12px 12px  rgba(79,209,197,.64);
+
+}
+.btn{
+  min-width: 300px;
+  min-height: 60px;
+  color: #313133;
+  background: #02d1bf;
+    /*background: linear-gradient(90deg, rgba(129,230,217,1) 0%, rgba(79,209,197,1) 100%);*/
+  border: none;
+  border-radius: 1000px;
+  font-size:20px;
+  font-weight: 900;
+  color:#fff;
+  cursor: pointer;
+  margin:15px;
+  opacity: 0.6;
+  transition: 0.3s;
+  /*box-shadow: 12px 12px 24px rgba(79,209,197,.64);*/
+}
+.no-margin{
+  margin:0;
+}
+.btn:hover{
+  opacity: 1;
+}
+.btn:active{
+  opacity: 1;
+  transform: translateY(4px);
+}
+
+.btn:disabled{
+  background: #999;
+  opacity:1;
+}
+#question{
+  width:600px;
+  height:300px;
+  background: #b4dfe5;
+  margin:20px;
+  box-shadow: 0 0 5px 5px #bbb;
+  border-radius: 15px;
+  
+}
+.text{
+  width:500px;
+  height:200px;
+  background: #fff;
+  box-shadow: inset 0 0 5px 5px #bbb;
+  padding:25px;
+  color:#2A3166;
+  font-size:50px;
+}
+.red{
+  color:red;
+}
+.bold{
+  font-weight: bold;
+}
+/*.popup-mask {
+  position: relative;
+  text-align: center;
+  left: 0px;
+  width: 100%;
+  height: 100%;
+  background-color:rgba(0, 0, 0, 0.5);
+}*/
+.popup {
+  /*display: none;*/
+  background-color: #e7e3d4;
+  opacity: 1;
+  width:500px;
+  height: 500px;
+  /*position: fixed;
+  left: 50%;
+  top:20%;
+  transform: translate(-45%,5%);*/
+  border: 2px solid #666;
+  z-index: 9;
+  /*text-align:left;*/
+  display:flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.pp-btns{
+  margin:20px;
+}
+.text-center{
+  text-align:center;
+}
+.congrats-img{
+  width:200px;
+  height:200px;
+  margin:0;
+}
+/*.score-header{
+  margin-top:10px;
+}*/
+.center{
+  /*overflow: auto;*/
+  display: flex;
+  justify-content: center;
+  align-items: center
+}
+.nav{
+  margin:0;
+  padding:5px 10px;
+  position:fixed;
+  top:0;
+  left:0;
+  right:0;
+  width:100%;
+  height:40px;
+  display:flex;
+  justify-content: space-between;
+
+}
+.nav-btn{
+  padding: 0 20px;
+  margin:0 10px;
+  font-size: 20px;
+  font-weight: bold;
+  color:#303c6c;
+  /*width:1 46px;*/
+  cursor: pointer;
+  text-align: center;
+  text-decoration: none;
+  border: 3px solid #303c6c;
+  background-color: rgba(0,0,0,0);
+  outline: none;
+  border-radius: 25px;
+}
+.nav-btn:disabled{
+  opacity: 0;
+  cursor:default;
+}
+.score-counter{
+  font-size:40px;
+}
